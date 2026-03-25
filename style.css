@@ -7,9 +7,11 @@
 }
 
 :root {
-    --primary-color: #5a6b5d; /* Elegantní šalvějová zelená */
+    /*--primary-color: #5a6b5d; !* Elegantní šalvějová zelená *!*/
+    --primary-color: #800020; /* Elegantní šalvějová zelená */
     --text-color: #333;
-    --bg-color: #fffaf5; /* Krémové pozadí */
+    /*--bg-color: #fffaf5; !* Krémové pozadí *!*/
+    --bg-color: #FFF0E0; /* Krémové pozadí */
     --max-width: 800px;
 }
 
@@ -81,6 +83,98 @@ body {
 .section-content .text {
     font-size: 1.1rem;
     text-align: center;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 25px;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.map-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero-layout {
+    position: relative;
+    width: 100%;
+}
+
+.image-wrapper {
+    width: 100%;
+}
+
+.image-wrapper img {
+    width: 100%;     /* Roztáhne obrázek na celou šířku containeru */
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .name-left {
+        position: absolute;
+        top: 15%;        /* Upravte dle prázdného místa v SVG */
+        left: 10%;       /* Upravte dle prázdného místa v SVG */
+        z-index: 2;
+        margin: 0;
+        font-size: 4rem; /* Na desktopu může být větší */
+    }
+
+    .name-right {
+        position: absolute;
+        bottom: 15%;     /* Upravte dle prázdného místa v SVG */
+        right: 10%;      /* Upravte dle prázdného místa v SVG */
+        z-index: 2;
+        margin: 0;
+        font-size: 4rem;
+    }
+}
+
+/* Mobilní zobrazení - texty nad a pod obrázkem, aby se nezmenšil */
+@media (max-width: 767px) {
+    .name-left, .name-right {
+        text-align: center;
+        display: block;
+        width: 100%;
+        font-size: 3rem;
+        margin: 15px 0;
+    }
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Mezera mezi textem a ikonou */
+}
+
+.icon-link {
+    color: var(--primary-color);
+    font-size: 1.5rem; /* Velikost ikony */
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.icon-link:hover {
+    opacity: 0.7;
 }
 
 footer {
