@@ -1,0 +1,115 @@
+/* Definice fontu - předpokládám soubor ve složce fonts */
+@font-face {
+    font-family: 'Amsterdam Four';
+    src: url('fonts/AmsterdamFour.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #5a6b5d; /* Elegantní šalvějová zelená */
+    --text-color: #333;
+    --bg-color: #fffaf5; /* Krémové pozadí */
+    --max-width: 800px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.font-amsterdam {
+    font-family: 'Amsterdam Four', cursive;
+    font-weight: normal;
+}
+
+/* Úvodní sekce */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.hero .image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.hero-date {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Obecné sekce */
+.wedding-section {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.wedding-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.section-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-content .text {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    background: #eee;
+    margin-top: 50px;
+}
+
+/* Desktop zobrazení - obrázek vedle textu */
+@media (min-width: 768px) {
+    .section-content {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        text-align: left;
+    }
+    
+    .section-content img {
+        width: 45%;
+        margin-bottom: 0;
+    }
+
+    .section-content .text {
+        text-align: left;
+    }
+
+    /* Každá druhá sekce bude mít prohozený obrázek a text (cik-cak) */
+    .wedding-section:nth-of-type(even) .section-content {
+        flex-direction: row-reverse;
+    }
+}
