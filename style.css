@@ -11,7 +11,7 @@
     --primary-color: #800020; /* Elegantní šalvějová zelená */
     --text-color: #333;
     /*--bg-color: #fffaf5; !* Krémové pozadí *!*/
-    --bg-color: #FFF0E0; /* Krémové pozadí */
+    --bg-color: #FBD5AB; /* Krémové pozadí */
     --max-width: 800px;
 }
 
@@ -178,10 +178,11 @@ body {
 }
 
 footer {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
-    background: #eee;
-    margin-top: 50px;
+    background: var(--bg-color);
+    margin-top: 20px;
+    color: var(--primary-color);
 }
 
 /* Desktop zobrazení - obrázek vedle textu */
@@ -199,7 +200,7 @@ footer {
     }
 
     .section-content .text {
-        text-align: left;
+        text-align: justify;
     }
 
     /* Každá druhá sekce bude mít prohozený obrázek a text (cik-cak) */
