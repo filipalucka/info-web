@@ -2,6 +2,15 @@
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Vrstva_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1080 1556.9" style="enable-background:new 0 0 1080 1556.9;" xml:space="preserve">
+<defs>
+  <style type="text/css">
+    @font-face {
+      font-family: 'Amsterdam Four';
+      src: url('https://filipalucka.info/fonts/AmsterdamFour.ttf');
+    }
+    text { font-family: 'Amsterdam Four', sans-serif; }
+  </style>
+</defs>
 <style type="text/css">
 	.st0{fill:#020304;}
 	.st1{fill:none;}
