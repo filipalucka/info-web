@@ -7,11 +7,11 @@
 }
 
 :root {
-    /*--primary-color: #5a6b5d; !* Elegantní šalvějová zelená *!*/
-    --primary-color: #800020; /* Elegantní šalvějová zelená */
+    /*--primary-color: #79144d; !* Elegantní šalvějová zelená *!*/
+    --primary-color: #a4133c; /* Elegantní šalvějová zelená */
     --text-color: #333;
-    /*--bg-color: #fffaf5; !* Krémové pozadí *!*/
-    --bg-color: #a4988d; /* Krémové pozadí */
+    /*--bg-color: #a4988d; !* Krémové pozadí *!*/
+    --bg-color: #f9eae1; /* Krémové pozadí */
     --max-width: 800px;
 }
 
@@ -126,6 +126,12 @@ body {
     width: 100%;     /* Roztáhne obrázek na celou šířku containeru */
     height: auto;
     display: block;
+}
+
+.responsive-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Pokud používáš zaoblení */
 }
 
 @media (min-width: 768px) {
