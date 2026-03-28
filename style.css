@@ -198,3 +198,14 @@ footer {
         width: 80%;
     }
 }
+
+.list-clean {
+    list-style-type: none; /* Odstraní tečky */
+    padding: 0;            /* Odstraní odsazení zleva */
+    margin: 20px 0;        /* Mezera nad a pod celým seznamem */
+}
+
+.list-clean li {
+    margin-bottom: 10px;   /* Mezera mezi jednotlivými řádky */
+    display: block;        /* Jistota, že každý bod bude na novém řádku */
+}
