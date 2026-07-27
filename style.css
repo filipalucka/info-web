@@ -209,3 +209,48 @@ footer {
     margin-bottom: 10px;   /* Mezera mezi jednotlivými řádky */
     display: block;        /* Jistota, že každý bod bude na novém řádku */
 }
+
+.section-centered .section-content {
+    flex-direction: column !important; /* Vynutí směr pod sebe i na desktopu */
+    align-items: center;              /* Vycentruje obrázek i text horizontálně */
+    text-align: center;               /* Vycentruje samotný text */
+}
+
+.section-centered .section-content img {
+    width: 100%;                       /* Nebo např. 60-80% pokud nechceš obrázek obří */
+    margin-bottom: 20px;
+}
+
+.section-centered .section-content .text {
+    text-align: center;                /* Jistota, že text v divu zůstane na střed */
+}
+
+.img-tall {
+    display: block !important;
+    height: 550px !important;    /* Vynutíme pevnou výšku */
+    max-height: 560px !important;/* Pojistka pro maximální výšku */
+    width: auto !important;      /* Dopopočítá šířku k 400px výšce */
+    max-width: 100% !important;  /* Zamezí přetečení na velmi malých displejích */
+    margin-left: auto !important;/* Vycentrování zleva */
+    margin-right: auto !important;/* Vycentrování zprava */
+}
+
+/* Úprava pro mobilní telefony */
+@media (max-width: 767px) {
+    .img-tall {
+        height: 450px !important; /* Na mobilu bude ještě menší */
+    }
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.faq-question {
+    text-align: center;     /* Vycentrování nadpisu */
+    font-size: 1rem;      /* Odpovídá menšímu nadpisu (přibližně původní h5) */
+    font-weight: 600;       /* Tučné písmo */
+    margin-top: 30px;       /* Odsazení od předchozí otázky/odstavce */
+    margin-bottom: 10px;    /* Mezera mezi otázkou a odpovědí */
+    color: #333;            /* Případně uprav podle své barevné palety */
+}
