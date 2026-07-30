@@ -238,7 +238,7 @@ footer {
 /* Úprava pro mobilní telefony */
 @media (max-width: 767px) {
     .img-tall {
-        height: 450px !important; /* Na mobilu bude ještě menší */
+        height: 480px !important; /* Na mobilu bude ještě menší */
     }
 }
 
